@@ -107,3 +107,8 @@ function getUserGmail(user, gmail){
     return user.find(mail => mail.email === gmail)
 }
 console.log(getUserGmail(chuVaki, 'moorehensley@indexia.com'))
+//6
+function sortByAge(user, min, max){
+    return user.filter(years => years.age > min && years.age < max)
+}
+console.log(sortByAge(chuVaki, 25, 40))
