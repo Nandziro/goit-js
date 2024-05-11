@@ -84,5 +84,13 @@ let chuVaki = [
     age: 39,
     },
     ];
+//1
 let getName= chuVaki.map(men => men.name)
 console.log(getName)
+//2
+function getEyeColor(user, color){  
+    return user.filter(eye => eye.eyeColor === color)
+}
+console.log(getEyeColor(chuVaki, 'blue'))
+//3
+
