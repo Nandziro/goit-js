@@ -102,3 +102,8 @@ function getOnline(user, active){
     return user.filter(online => online.isActive === active)
 }
 console.log(getOnline(chuVaki, true))
+//5
+function getUserGmail(user, gmail){
+    return user.find(mail => mail.email === gmail)
+}
+console.log(getUserGmail(chuVaki, 'moorehensley@indexia.com'))
